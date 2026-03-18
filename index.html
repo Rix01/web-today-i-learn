@@ -16,7 +16,7 @@
   <body>
     <!-- 상단 내비게이션 -->
     <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
+      <span class="nav-logo">San's Page</span>
       <ul class="nav-links">
         <li><a href="#about">자기소개</a></li>
         <li><a href="#gallery">갤러리</a></li>
@@ -30,22 +30,43 @@
       <div class="profile-card">
         <div class="profile-image">
           <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <img src="./images/profileImage.jpeg" alt="프로필 사진" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>이산</h1>
+          <p class="tagline">"오히려 해볼 만하다."</p>
+          <a href="https://github.com/rix01" class="github-link" target="_blank" rel="noopener noreferrer">
+            <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
         </div>
       </div>
     </section>
 
     <main>
-      <!-- 자기소개 -->
-      <section class="content-section">
-        <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
-      </section>
+      <!-- 소개 그리드 -->
+      <div class="intro-grid">
+        <section class="content-section">
+          <h2>자기소개</h2>
+          <p class="intro-text">안녕하세요. <span class="intro-highlight">반란군이 되고 싶은 백엔드 개발자</span> 이산입니다. <br>
+            다양한 분야에 관심이 많습니다. 만나면 같이 <span class="intro-highlight">스몰토크</span> 해요!!
+          </p>
+        </section>
+
+        <section class="content-section">
+          <h2>자격증</h2>
+          <ul class="cert-list">
+            <li>정보처리기사</li>
+            <li>SQLD (SQL 개발자)</li>
+            <li>ADsP (데이터분석 준전문가)</li>
+            <li>TOEIC SPEAKING AL</li>
+            <li>한국사능력검정시험 1급</li>
+            <li>자동자운전면허 2종 보통</li>
+          </ul>
+        </section>
+      </div>
 
       <!-- 기본 정보 -->
       <section class="content-section" id="info">
@@ -54,19 +75,19 @@
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>이채린</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ENTP(극단적으로 선택했을 때는 ENFJ)</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>책 읽기, 운동, 애니메이션 보기</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>김치볶음밥, 닭갈비, 치킨, 김밥, 맥주</td>
           </tr>
         </table>
       </section>
@@ -74,14 +95,44 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">가슴속에 깊은 여운을 남긴 인생 영화 포스터 컬렉션입니다.</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <div class="gallery-item">
+            <img src="./images/movie/movie1.jpeg" alt="영화 포스터 1" />
+            <div class="gallery-overlay"><span>명량</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie2.jpeg" alt="영화 포스터 2" />
+            <div class="gallery-overlay"><span>한산</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie3.jpeg" alt="영화 포스터 3" />
+            <div class="gallery-overlay"><span>노량</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie4.jpeg" alt="영화 포스터 4" />
+            <div class="gallery-overlay"><span>인터스텔라</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie5.jpeg" alt="영화 포스터 5" />
+            <div class="gallery-overlay"><span>왕과 사는 남자</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie6.png" alt="영화 포스터 6" />
+            <div class="gallery-overlay"><span>너의 이름은</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie7.jpeg" alt="영화 포스터 7" />
+            <div class="gallery-overlay"><span>리얼 스틸</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie8.jpeg" alt="영화 포스터 8" />
+            <div class="gallery-overlay"><span>진격의 거인 더 라스트 어택</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/movie/movie9.jpeg" alt="영화 포스터 9" />
+            <div class="gallery-overlay"><span>F1 더 무비</span></div>
+          </div>
         </div>
       </section>
 
@@ -89,15 +140,41 @@
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
         <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
+          <!-- 첫 번째 작품 -->
           <article class="work-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+              <img src="./images/drama.webp" alt="폭싹 속았수다" />
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <span class="work-category">드라마</span>
+              <h3>폭싹 속았수다</h3>
+              <p class="work-quote">"여전히 꽃잎 같고, 여전히 꿈을 꾸는 당신에게"</p>
+              <p>제주에서 태어난 '당차고 요망진 반항아' 애순이와 '팔불출 무쇠' 관식이의 모험 가득한 일생을 사계절로 풀어낸 넷플릭스 시리즈입니다.</p>
+            </div>
+          </article>
+
+          <!-- 두 번째 작품 (영상) -->
+          <article class="work-card">
+            <div class="work-video">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/hx55q-E0lhI?si=TOlNB2RKGMeDDPxr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="work-info">
+              <span class="work-category">애니메이션</span>
+              <h3>원피스: 닥터 히루루크</h3>
+              <p class="work-quote">"사람이 언제 죽는다고 생각하나? ...사람들에게 잊혀졌을 때다!"</p>
+            </div>
+          </article>
+
+          <!-- 세 번째 작품 -->
+          <article class="work-card">
+            <div class="work-thumbnail">
+              <img src="./images/drama2.webp" alt="미스터 션샤인" />
+            </div>
+            <div class="work-info">
+              <span class="work-category">드라마</span>
+              <h3>미스터 션샤인</h3>
+              <p class="work-quote">"뜨겁고 의로운 이름, 의병(義兵)"</p>
+              <p>저물어 가는 조선에 그들이 있었다. 그들은 그저 아무개다. 그 아무개들 모두의 이름이 의병이다.</p>
             </div>
           </article>
         </div>
@@ -110,13 +187,15 @@
 
         <!-- TIL 작성 폼 -->
         <form class="til-form" id="til-form">
-          <div class="form-group">
-            <label for="til-date">날짜</label>
-            <input type="date" id="til-date" name="date" required />
-          </div>
-          <div class="form-group">
-            <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="til-date">날짜</label>
+              <input type="date" id="til-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="til-title">제목</label>
+              <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+            </div>
           </div>
           <div class="form-group">
             <label for="til-content">내용</label>
