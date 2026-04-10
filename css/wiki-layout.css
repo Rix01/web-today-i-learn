@@ -348,27 +348,128 @@ main {
 .til-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .til-item {
-  padding: 24px;
+  padding: 32px;
   border-left: 6px solid var(--primary-light);
   background-color: var(--card-bg-color);
-  border-radius: 0 16px 16px 0;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 0 24px 24px 0;
+  box-shadow: 0 4px 20px rgba(45, 106, 79, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.til-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 25px rgba(45, 106, 79, 0.08);
 }
 
 .til-item time {
+  display: block;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-light);
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
 }
 
 .til-item h3 {
-  font-size: 1.3rem;
-  margin: 12px 0;
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
   color: var(--primary-color);
+  line-height: 1.4;
+}
+
+.til-item p {
+  color: var(--font-default-color);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.til-item ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.til-item li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: var(--font-muted-color);
+}
+
+.til-item li strong {
+  color: var(--primary-color);
+}
+
+.til-item code {
+  background-color: #f1f5f1;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  color: #c94b4b;
+  font-weight: 600;
+}
+
+.til-item blockquote {
+  background-color: #f8faf8;
+  border-left: 4px solid var(--primary-light);
+  padding: 24px;
+  margin: 24px 0;
+  border-radius: 0 16px 16px 0;
+  font-style: italic;
+  color: var(--font-muted-color);
+  line-height: 1.8;
+  position: relative;
+}
+
+.til-item blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 3rem;
+  color: var(--accent-color);
+  line-height: 1;
+  font-family: serif;
+  opacity: 0.5;
+}
+
+/* TIL Item Table Styling */
+.til-item table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 24px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--divider-color);
+}
+
+.til-item th,
+.til-item td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.til-item th {
+  background-color: var(--hero-bg-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.til-item td {
+  background-color: white;
+  font-size: 0.95rem;
+  color: var(--font-muted-color);
+  line-height: 1.6;
+}
+
+.til-item tr:last-child td {
+  border-bottom: none;
 }
 
 /* 자격증 리스트 */
